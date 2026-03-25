@@ -53,6 +53,13 @@ COPY CON Rose.txt
 Create the file hello.txt using echo and redirection
 
 ## COMMAND AND OUTPUT
+```
+echo “hello world” > hello.txt
+type hello.txt
+```
+<img width="1347" height="134" alt="Screenshot 2026-03-26 001146" src="https://github.com/user-attachments/assets/bd7c8e99-4e7e-4fee-8ce7-0cd17610bb71" />
+
+
 
 Copy the file hello.txt into the file hello1.txt
 
