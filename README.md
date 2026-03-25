@@ -25,6 +25,11 @@ Execute the necessary commands/batch file for the desired output.
 Create a directory named "my-folder"
 
 ## COMMAND AND OUTPUT
+```
+mkdir my-folder
+```
+<img width="1053" height="27" alt="Screenshot 2026-03-25 224216" src="https://github.com/user-attachments/assets/073b6a6a-5b24-4000-ac45-a3e6779c61a1" />
+
 
 Remove the directory "my-folder"
 
