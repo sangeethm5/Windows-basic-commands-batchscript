@@ -73,28 +73,57 @@ copy hello.txt hello1.txt
 Remove the file hello1.txt
 
 ## COMMAND AND OUTPUT
+```
+del hello1.txt
+```
+<img width="1052" height="47" alt="Screenshot 2026-03-26 001812" src="https://github.com/user-attachments/assets/e055cef5-cd6a-44c1-bc74-cb6137674a37" />
+
 
 List out the file hello1.txt in the current directory
 
 ## COMMAND AND OUTPUT
+```
+dir hello1.txt
+```
+<img width="1057" height="180" alt="Screenshot 2026-03-26 002746" src="https://github.com/user-attachments/assets/a66852b1-0866-4094-b917-53d08bc948c5" />
+
 
 List out all the associated file extensions 
 
 ## COMMAND AND OUTPUT
+```
+assoc | more
+```
+<img width="1082" height="871" alt="Screenshot 2026-03-26 003350" src="https://github.com/user-attachments/assets/d2abf463-1923-457a-b2f5-5336096157c1" />
+
 
 
 Compare the file hello.txt and rose.txt
 
 ## COMMAND AND OUTPUT
+```
+fc hello.txt Rose.txt
+```
+<img width="1137" height="227" alt="Screenshot 2026-03-26 003654" src="https://github.com/user-attachments/assets/09011c37-8102-4708-b3f2-3b3217f7768f" />
+
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
-
+notepad 1.bat
+```
+@echo off
+set name=Sangeeth
+echo Hello, %name%!
+pause
+```
+1.bat
 
 
 
 
 ## OUTPUT
+<img width="938" height="94" alt="Screenshot 2026-03-26 005044" src="https://github.com/user-attachments/assets/e5bb937e-2b0e-4c3f-87e4-13c2be575a3b" />
+
 
 
 
