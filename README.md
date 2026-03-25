@@ -109,6 +109,7 @@ fc hello.txt Rose.txt
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
+
 notepad 1.bat
 ```
 @echo off
@@ -135,19 +136,57 @@ Ask the user if they want to check another number.
 Repeat the process if the user enters Y, and exit with a thank-you message if the user enters N.
 Handle invalid inputs for the continuation prompt (Y/N) gracefully.
 
+notepad 2.bat
+```
+@echo off
+:main
+set /p number=Enter a number: 
+rem Calculate remainder when divided by 2
+set /a remainder=%number% %% 2
+if %remainder%==1 (
+    echo %number% is an odd number.
+) else (
+    echo %number% is not an odd number.
+)
+:choice
+set /p continue=Do you want to check another number? (Y/N): 
+if /i "%continue%"=="Y" goto main
+if /i "%continue%"=="N" goto end
+echo Invalid choice, please enter Y or N.
+goto choice
+:end
+echo Thank you for using the odd number checker!
+pause
+```
+2.bat
+
 
 
 ## OUTPUT
+<img width="993" height="155" alt="Screenshot 2026-03-26 005949" src="https://github.com/user-attachments/assets/f9c204ba-31e0-4ecf-93d1-c7e5fcf8d204" />
+
 
 
 
 
 Write a batch file that uses a FOR loop to iterate over a sequence of numbers (1 to 5) and displays each number with the label Number:. The output should pause at the end.
 
+notepad 3.bat
+```
+@echo off
+for %%i in (1 2 3 4 5) do (
+    echo Number: %%i
+)
+pause
+```
+3.bat
+
 
 
 
 ## OUTPUT
+<img width="961" height="188" alt="Screenshot 2026-03-26 011558" src="https://github.com/user-attachments/assets/6390f87d-e5a6-4a5b-9617-87a14214a173" />
+
 
 
 
@@ -160,7 +199,21 @@ Make sure the script works for files located in the same directory as the batch 
 Use pause to keep the command window open after displaying the message.
 Expected Output (if the file exists):
 
+notepad 4.bat
+```
+@echo off
+if exist sample.txt (
+    echo sample.txt exists.
+) else (
+    echo sample.txt does not exist.
+)
+pause
+```
+4.bat
+
 ## OUTPUT
+<img width="936" height="91" alt="Screenshot 2026-03-26 011820" src="https://github.com/user-attachments/assets/8e45309c-cf81-43be-aeef-9c81ca2f8f60" />
+
 
 
 Write a batch script that displays a simple menu with three options:
@@ -169,8 +222,37 @@ Create a File – Creates a file named newfile.txt with the content This is a ne
 Exit – Exits the script with a goodbye message
 The script should repeatedly display the menu until the user chooses to exit. Use goto statements to handle menu navigation.
 
+notepad 5.bat
+```
+@echo off
+:menu
+echo 1. Say Hello
+echo 2. Create a File
+echo 3. Exit
+set /p choice=Choose an option: 
+if "%choice%"=="1" goto hello
+if "%choice%"=="2" goto createfile
+if "%choice%"=="3" goto end
+
+:hello
+echo Hello, World!
+goto menu
+
+:createfile
+echo Creating a file...
+echo This is a new file > newfile.txt
+goto menu
+:end
+echo Goodbye!
+pause
+
+```
+5.bat
+
 
 ## OUTPUT
+<img width="984" height="410" alt="Screenshot 2026-03-26 012114" src="https://github.com/user-attachments/assets/115a0c32-48a4-4bb5-8bb9-93248fcf3455" />
+
 
 
 
