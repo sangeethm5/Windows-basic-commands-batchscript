@@ -34,11 +34,20 @@ mkdir my-folder
 Remove the directory "my-folder"
 
 ## COMMAND AND OUTPUT
+```
+rmdir my-folder
+```
+<img width="1058" height="25" alt="Screenshot 2026-03-25 224241" src="https://github.com/user-attachments/assets/5fd2791a-0385-402e-a997-b1126dde3812" />
+
 
 
 Create the file Rose.txt
 
 ## COMMAND AND OUTPUT
+```
+COPY CON Rose.txt
+```
+<img width="1150" height="366" alt="Screenshot 2026-03-26 000831" src="https://github.com/user-attachments/assets/b2487697-beb3-4345-9ece-facd8753240f" />
 
 
 Create the file hello.txt using echo and redirection
