@@ -64,6 +64,11 @@ type hello.txt
 Copy the file hello.txt into the file hello1.txt
 
 ## COMMAND AND OUTPUT
+```
+copy hello.txt hello1.txt
+```
+<img width="1299" height="72" alt="Screenshot 2026-03-26 001329" src="https://github.com/user-attachments/assets/879caddc-c50a-460c-9962-3a6e1f68ef71" />
+
 
 Remove the file hello1.txt
 
